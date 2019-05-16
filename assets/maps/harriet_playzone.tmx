@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="1">
+<map version="1.2" tiledversion="1.2.3" orientation="orthogonal" renderorder="right-down" width="64" height="64" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="1">
+ <properties>
+  <property name="spawn_x" type="int" value="276"/>
+  <property name="spawn_y" type="int" value="750"/>
+ </properties>
  <tileset firstgid="1" name="tile_sheet_1" tilewidth="16" tileheight="16" spacing="1" tilecount="225" columns="15">
   <image source="../images/tile_sheet_1.png" width="256" height="256"/>
   <terraintypes>

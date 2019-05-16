@@ -37,7 +37,7 @@ function love.load()
 	camera.scale.x = 0.3
 	camera.scale.y = 0.3
 
-	obm:add(require("objects/player"):new(20,842))
+	obm:add(require("objects/player"):new(map.properties.spawn_x,map.properties.spawn_y))
 end
 
 local pop, push = table.remove,

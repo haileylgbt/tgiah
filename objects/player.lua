@@ -1,7 +1,4 @@
-Player = {
-	spawnx = 5,
-	spawny = 5
-}
+Player = {}
 
 require "tools/camera"
 require "tools/physics_helper"

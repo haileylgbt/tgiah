@@ -8,9 +8,12 @@ return {
   height = 64,
   tilewidth = 16,
   tileheight = 16,
-  nextlayerid = 5,
+  nextlayerid = 6,
   nextobjectid = 1,
-  properties = {},
+  properties = {
+    ["spawn_x"] = 276,
+    ["spawn_y"] = 750
+  },
   tilesets = {
     {
       name = "tile_sheet_1",

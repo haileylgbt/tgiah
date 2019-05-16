@@ -58,7 +58,7 @@ function Tlm:is_solid_at_pos(x,y)
 end
 
 function Tlm:loadmap(mapname)
-	local map = require ("assets/maps/"..mapname)
+	map = require ("assets/maps/"..mapname)
 
 	for layer = 1,#map.layers do
 		self.tiles[layer] = {}
