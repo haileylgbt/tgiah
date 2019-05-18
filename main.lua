@@ -72,5 +72,5 @@ function love.draw()
 	camera:unset()
 	love.graphics.setBackgroundColor(1, 1, 1, 1)
 	love.graphics.setColor(0, 0, 0, 1)
-	love.graphics.print("this is a test build, not the final game. a lot of things are expected to change, including the placeholder character.", 0, 0, 0, 1, 1)
+	love.graphics.print("this is a test build, not the final game. a lot of things are expected to change, including the map.", 0, 0, 0, 1, 1)
 end
