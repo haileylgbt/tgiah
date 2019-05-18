@@ -8,24 +8,24 @@ local rect = require "objects/rect"
 local floor = math.floor
 
 local tiles = tlm.tiles[3]
-local spawn = tlm.tiles[4]
+
 
 
 local quad  = love.graphics.newQuad
 local anim_data = {
-	quad(0,0,8,16,128,16),
-	quad(9,0,8,16,128,16),
-	quad(18,0,8,16,128,16),
-	quad(27,0,8,16,128,16),
-	quad(36,0,8,16,128,16),
+	quad(0,0,74,148,1280,148),
+	quad(75,0,74,148,1280,148),
+	quad(75*2,0,74,148,1280,148),
+	quad(75*3,0,74,148,1280,148),
+	quad(75*4,0,74,148,1280,148),
 }
-local image = love.graphics.newImage("assets/images/Player_Sheet.png")
+local image = love.graphics.newImage("assets/images/harriet.png")
 image:setFilter("nearest","nearest")
 
 function Player:new(x,y)
 
 	--x,y,w,h,img,quad,id
-	local player = require("objects/entity"):new(x,y,16,16,nil,nil,"harriet")
+	local player = require("objects/entity"):new(x,y,8,16,nil,nil,"harriet")
 
 	function player:load()
 		gameLoop:addLoop(self)
@@ -129,7 +129,7 @@ function Player:new(x,y)
 
 	function player:draw()
 
-		self.animation:draw({self.pos.x,self.pos.y},0,1,1)
+		self.animation:draw({self.pos.x,self.pos.y},0,0.11,0.11)
 		--love.graphics.rectangle("fill",self.pos.x,self.pos.y,self.size.x,self.size.y)
 	end
 
